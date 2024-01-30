@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /* background-color: blue; */
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(78, 78, 230);
+        }
+
+        .integer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .num {
+            padding: 5px 10px;
+            background: rgb(78, 78, 230);
+            border-radius: 50%;
+            color: #fff;
+        }
+
+        #num3 {
+            background: #cac6c6;
+        }
+
+        .bar {
+            width: 40px;
+            height: 3px;
+            background: #cac6c6;
+        }
+
+        #bar1 {
+            background: rgb(127, 3, 244);
+        }
+
+        .card {
+            width: 90%;
+            max-width: 600px;
+            height: 400px;
+            border-radius: 5px;
+            background: #fff;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            align-items: center;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            /* text-decoration: none; */
+            width: 100%;
+            margin-left: 312px;
+        }
+
+        .btn button {
+            flex-basis: 10%;
+        }
+
+        .btn2 {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: right 312px;
+            text-decoration: none;
+        }
+
+        .btn2 button {
+            flex-basis: 10%;
+        }
+
+        button {
+            margin: 6px;
+            margin-right: 6px;
+            margin-left: 6px;
+            padding: 3px;
+            margin-left: 38px;
+            margin-right: 38px;
+            text-decoration: none;
+            background:   rgb(78, 78, 230);
+        }
+        button a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn button a {
+            text-decoration: none;
+            color: black;
+        }
+
+        form h1 {
+            font-size: 30px;
+            margin-bottom: 20%;
+            position: relative;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="integer">
+            <span class="num" id="num1">1</span>
+            <span class="bar" id="bar1"></span>
+            <span class="num" id="num2">2</span>
+            <span class="bar" id="bar2"></span>
+            <span class="num" id="num3">3</span>
+        </div>
+        <h1>PERSONAL INFO</h1>
+        <form>
+            <div class="input-field">
+                <label>email</label> <br>
+                <input id="semail" type="email" placeholder="email address"  />
+            </div>
+            <div class="input-field">
+                <label>password</label> <br>
+                <input id="spassword" type="password" placeholder="password"  />
+            </div>
+            <div class="input-field">
+                <label>confirm password</label> <br>
+                <input id="sconfirmpass" type="password" placeholder="confirm password"  />
+            </div>
+            <button>
+                <a href="index.html">back</a>
+            </button>
+            <!-- <button>
+                <a onclick="signin()">next→</a>
+            </button> -->
+            <button onclick="signin()" type="button" >signin</button>
+            <!-- <p>forward password <a href="#">click here</a></p> -->
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
